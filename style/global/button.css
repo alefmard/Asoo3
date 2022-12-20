@@ -1,0 +1,49 @@
+:root {
+    --color1: #57d65738;
+    --color2: #02b4f0;
+    --color3: #1c6e89;
+    --color4: #e55c5c;
+}
+
+.GoButt{
+    font-size: 0.9rem;
+    background-color:var(--color4);
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border:none;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 4vw 1px 0px 1px;
+    box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.345);
+    transition: 1s;
+}
+
+
+.GoButt:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+
+
+.moreButt{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-underline-offset: 5px;
+    color: #e55c5c;
+    margin-right:5px;
+}
+
+
+@media screen and (max-width:1100px){
+
+    .GoButt{
+        font-size: 0.7rem;
+    }
+
+    .moreButt{
+        font-size: 0.7rem;
+    }
+}
+

@@ -1,0 +1,73 @@
+:root {
+    --color1: #57d65738;
+    --color2: #02b4f0;
+    --color3: #1c6e89;
+    --color4: #e55c5c;
+}
+
+
+h1{
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 3vw;
+    text-align: right;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+h3{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+
+
+p{
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: justify;
+    line-height: 2rem;
+    color: black;
+}
+
+
+.iTopic{
+    color: var(--color2);
+}
+
+
+@media screen and (max-width:1100px){
+    h1{
+        font-size: 1.5rem;
+    }
+
+    h2{
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-weight: 300;
+        font-size: 1rem;
+    }
+
+    h5{
+        font-size: 0.8rem;
+    }
+
+    p{
+        font-size: 0.8rem;
+    }
+
+    li{
+        font-size: 0.8rem;
+    }
+}

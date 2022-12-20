@@ -1,0 +1,54 @@
+
+.navigationBar{
+    color: black;
+    display:flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 20px;
+}
+
+.navigationList{
+    display: flex ;
+}
+
+.iDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.iDetail ul{
+    display: flex;
+    list-style: none;
+}
+
+.navigationBar ul li a{
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000 ;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 1s;
+}
+
+.navigationBar ul li a:hover{
+    background-color: antiquewhite;
+    border-radius: 7px;
+}
+
+.navitems1 img{
+    width: 60px;
+    float: right;
+    margin-left: 30px;
+    flex:1;
+}
+
+
+@media screen and (max-width:800px){
+.navigationBar ul li a{
+    font-size: 0.8rem;
+
+}
+}
