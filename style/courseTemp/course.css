@@ -41,6 +41,7 @@ h2{
     border-radius: 10px;
     margin-top: 1vw;
     padding: 10px;
+    height: fit-content;
 }
 
 
@@ -87,12 +88,111 @@ h2{
 
 .courseCart{
     display: flex;
+    position: relative;
     border: 1px solid rgba(128, 128, 128, 0.116);
     border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+    transition: height ease-in-out 1s;
+}
+
+.courseCart:hover{
+    background-color: white;
+    z-index: 1;
+    height: 350px;
+}
+
+.courseCart .cartImg{
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    transition: 2s visibility 0s, opacity 0.5s linear;
+}
+
+.courseCart:hover .cartImg {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.cartImg img{
+    height: 175px;
+}
+
+
+.cartPublisher , .cartTopic , .cartRate , .cartPrice, .cartTime{
+    position: absolute;
+    padding:2px;
+    border-radius: 10px;
+}
+
+.cartTopic{
+    bottom: 40px;
+    right: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+.cartPublisher{
+    top: 5px;
+    right: 5px;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.688);
+    color: black;
+    font-size: 0.6rem;
+}
+
+.cartRate{
+    bottom: 40px;
+    left: 5px;
+    font-size: 0.6rem;
+    padding:5px;
+    color: black;
 }
 
 
 
+.cartPrice{
+    bottom: 5px;
+    left: 5px;
+    font-size: 0.8rem;
+    color: green;
+}
+
+
+.cartTime{
+    bottom: 80px;
+    left: 5px;
+    font-size: 0.7rem;
+    background-color: rgba(255, 255, 255, 0.688);
+    color: black;
+}
+
+
+.cartDetail{
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 10px;
+    left: 10px;  
+    visibility: hidden;
+    transition:  2s visibility 0s, opacity 0.5s linear ;
+}
+.cartDetail p{
+    font-size: 0.8rem ;
+}
+
+
+.courseCart:hover .cartDetail {
+    opacity: 1;
+    visibility: visible;
+}
+
+.checked {
+    color: gold;
+  }
 
 @media screen and (max-width:800px){
 
