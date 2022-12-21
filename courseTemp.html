@@ -7,6 +7,8 @@
     <title>Html</title>
 
     <link rel="stylesheet" href="style/courseTemp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <main>
@@ -46,23 +48,23 @@
                            <div class="coursesFilter1">
                                 <h4 class="iTopic">ارائه‌دهنده</h4>
                                 
-                                <input type="checkbox" name="MaktabKhone" id="Maktab">
+                                <input type="checkbox" name="MaktabKhone" id="Maktab" checked onchange="Maktab()">
                                 <span for="MaktabKhone"> مکتبخونه </span> 
 
-                                <input type="checkbox" name="faraDars" id="faraDars">
-                                <span for="faraDars"> فرادرس </span>
+                                <input type="checkbox" name="FaraDars" id="FaraDars" checked >
+                                <span For="FaraDars"> فرادرس </span>
                                 
-                                <input type="checkbox" name="roocket" id="roocket">
-                                <span for="roocket"> راکت </span>
+                                <input type="checkbox" name="Roocket" id="Roocket" checked>
+                                <span for="Roocket"> راکت </span>
 
-                                <input type="checkbox" name="roocket" id="roocket">
-                                <span for="roocket"> سبزلرن </span>
+                                <input type="checkbox" name="SabzLearn" id="SabzLearn" checked>
+                                <span for="SabzLearn"> سبزلرن </span>
 
-                                <input type="checkbox" name="roocket" id="roocket">
-                                <span for="roocket"> کورسرا </span>
+                                <input type="checkbox" name="Coursera" id="Coursera" checked>
+                                <span for="Coursera"> کورسرا </span>
 
-                                <input type="checkbox" name="roocket" id="roocket">
-                                <span for="roocket"> یوتیوب </span>
+                                <input type="checkbox" name="YouTube" id="YouTube" checked>
+                                <span for="YouTube"> یوتیوب </span>
 
                            </div>
                            <div class="coursesFilter2"></div>
@@ -70,14 +72,96 @@
 
 
                         <div class="coursesAll">
-                            <div class="courseCart">
-                                
+
+
+                            <div class="courseCart Maktab">
+                                <div class="cartImg">
+                                    <img src="Media/Picturs/HTML/faradrs-1.png" alt="HTML 4 logo">
+                                    <div class="cartPublisher">مکتبخونه</div>
+                                    <div class="cartTopic">دوره پیشرفته فرانت-اند</div>
+                                    <div class="cartRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="cartPrice"> ۳۰۰هزارتومان</div>
+                                    <div class="cartTime"> ۲۳:۰۰:۰۰</div>
+                                </div>
+                                <div class="cartDetail">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                </div>                              
                             </div>
-                            <div class="courseCart">2</div>
-                            <div class="courseCart">3</div>
-                            <div class="courseCart">4</div>
-                            <div class="courseCart">5</div>
-                            <div class="courseCart">6</div>
+
+                            <div class="courseCart">
+                                <div class="cartImg">
+                                    <img src="Media/Picturs/HTML/faradrs-1.png" alt="HTML 4 logo">
+                                    <div class="cartPublisher">مکتبخونه</div>
+                                    <div class="cartTopic">دوره پیشرفته فرانت-اند</div>
+                                    <div class="cartRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="cartPrice"> ۳۰۰هزارتومان</div>
+                                    <div class="cartTime"> ۲۳:۰۰:۰۰</div>
+                                </div>
+                                <div class="cartDetail">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                </div>                              
+                            </div>
+
+                            <div class="courseCart">
+                                <div class="cartImg">
+                                    <img src="Media/Picturs/HTML/faradrs-1.png" alt="HTML 4 logo">
+                                    <div class="cartPublisher">مکتبخونه</div>
+                                    <div class="cartTopic">دوره پیشرفته فرانت-اند</div>
+                                    <div class="cartRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="cartPrice"> ۳۰۰هزارتومان</div>
+                                    <div class="cartTime"> ۲۳:۰۰:۰۰</div>
+                                </div>
+                                <div class="cartDetail">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                </div>                              
+                            </div>
+
+
+                            <div class="courseCart">
+                                <div class="cartImg">
+                                    <img src="Media/Picturs/HTML/faradrs-1.png" alt="HTML 4 logo">
+                                    <div class="cartPublisher">مکتبخونه</div>
+                                    <div class="cartTopic">دوره پیشرفته فرانت-اند</div>
+                                    <div class="cartRate">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <div class="cartPrice"> ۳۰۰هزارتومان</div>
+                                    <div class="cartTime"> ۲۳:۰۰:۰۰</div>
+                                </div>
+                                <div class="cartDetail">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                                </div>                              
+                            </div>
+
+
+
+
                         </div>
                     </div>
                 </div>
