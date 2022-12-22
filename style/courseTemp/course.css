@@ -125,8 +125,11 @@ h2{
     visibility: hidden;
 }
 
-
+.cartImg {
+    width: 100%;
+}
 .cartImg img{
+    width: 100%;
     height: 175px;
 }
 
@@ -253,4 +256,10 @@ h2{
         display: grid;
         grid-template-columns: 1fr;
     }
+}
+
+
+
+.YouTube , .Coursera{
+    direction: ltr;
 }
