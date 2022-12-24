@@ -68,11 +68,20 @@ h2{
 .coursesFilter input{
     text-align: right;
     font-size: 0.8em;
-    margin-left: 2px;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 30px;
     margin-top: 10px;
 }
+.coursesFilter label{
+    margin-left: 15px;
+    margin-right: 15px;
 
+}
+
+.coursesFilter input:nth-child(1){
+    margin-right: 0px;
+    margin-top: 10px;
+}
 
 
 .coursesFilter1{
@@ -110,7 +119,6 @@ h2{
 .courseCart:hover{
     background-color: white;
     z-index: 1;
-    height: 350px;
 }
 
 .courseCart .cartImg{
@@ -187,16 +195,37 @@ h2{
 
 .cartDetail{
     opacity: 0;
+    overflow-y: auto;
     position: absolute;
     top: 5px;
     bottom: 5px;
     right: 10px;
     left: 10px;  
+    padding: 5px 10px;
     visibility: hidden;
+    
     transition:  2s visibility 0s, opacity 0.5s linear ;
 }
+
+.cartDetail::-webkit-scrollbar{
+    border-radius: 10px;
+}
+
+.cartDetail::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 5px gray;
+    border-radius: 20px;
+}
+
+.cartDetail::-webkit-scrollbar-thumb{
+    background-color: #02b4f0;
+    border-radius: 20px;
+
+}
+
+
 .cartDetail p{
     font-size: 0.8rem ;
+    line-height: 1.5rem;
 }
 
 
@@ -221,27 +250,33 @@ h2{
     text-align: center;
 }
 
+.priceSlider{
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
 
 .slider {
-    width:90%;
+    flex: 1;
     height: 10px;
     background: #d3d3d3;
     outline: none;
     opacity: 0.7;
     margin-left: 25px;
-    margin-right: 25px ;
+    margin-right: 25px;
     -webkit-transition: .2s;
     transition: opacity .2s;
-    text-align: center;
+    align-self: center;
   }
   
   .slider:hover {
     opacity: 1;
   }
 
-  .sliderValue{
+  .sliderValue {
+    padding-right: 100px;
     font-weight: 500;
-    text-align: left;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.688);
     border: 1px solid rgba(148, 148, 148, 0.234);
     padding: 5px;
