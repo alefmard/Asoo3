@@ -5,6 +5,11 @@
 
 .intrestsection{
     margin-top: 8vw;
+    margin-bottom: 1vw;
+}
+
+
+.intrestsection .sectionTitle h2{
     margin-bottom: 5vw;
 }
 

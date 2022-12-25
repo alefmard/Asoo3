@@ -16,12 +16,13 @@
     margin: 4vw 1px 0px 1px;
     box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.345);
     transition: 1s;
+    cursor: pointer;
 }
 
 
 .GoButt:hover{
     cursor: pointer;
-    transform: scale(0.95);
+    transform: scale(0.90);
 }
 
 
@@ -33,6 +34,31 @@
     text-underline-offset: 5px;
     color: #e55c5c;
     margin-right:5px;
+}
+
+.moreButt:hover{
+    cursor: pointer;
+}
+
+
+.LinkButt{
+    font-size: 0.7rem;
+    background-color:blue;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 30px 1px 0px 1px;
+    box-shadow: 0px 10px 40px rgba(255, 255, 255, 0.345);
+    transition: 1s;
+}
+
+
+.LinkButt:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+    opacity: 0.7;
 }
 
 

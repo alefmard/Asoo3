@@ -1,19 +1,16 @@
 let $ = document;
 let counter = 0;
 setInterval(function ch(){
-    if (counter % 3 == 0 ){
-        $.querySelector('.iTopic').innerHTML="مسیر شغلی";
+    if (counter % 2 == 0 ){
+        $.querySelector('.iTopic').innerHTML="مقایسه ";
         $.querySelector('.iTopic').style.color='red';
         ++counter
     }
-    else if(counter % 3 == 1){
-        $.querySelector('.iTopic').innerHTML="مسیر پیشرفت";
+
+    else{
+        $.querySelector('.iTopic').innerHTML="انتخاب ";
         $.querySelector('.iTopic').style.color='green';
         ++counter
     }   
-    else{
-        $.querySelector('.iTopic').innerHTML="مسیر آموزشی";
-        $.querySelector('.iTopic').style.color='var(--color2)';
-        ++counter
-    }
-},2000);
+
+},3000);

@@ -62,6 +62,7 @@
 }
 .cCourses{
     display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
