@@ -88,11 +88,14 @@ h2{
     margin-right: 15px;
     margin-left: 15px;
 }
-.coursesFilter2{
-    margin-right: 15px;
-    margin-left: 15px;
+ 
+.coursesFilter1 input{
+    margin-right: 30px;
 }
 
+table span{
+    margin-left: 20px;
+}
 .coursesAll{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, 32%));
@@ -149,21 +152,32 @@ h2{
 }
 
 .cartTopic{
-    bottom: 40px;
+    margin-left: 50px;
     right: 5px;
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
+    
 }
 
 
 .cartPublisher{
-    top: 5px;
+    bottom: 5px;
     right: 5px;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.688);
     color: black;
+    font-size: 0.7rem;
+    
+}
+
+
+.cartLang{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
     font-size: 0.6rem;
+    color: green;
 }
 
 .cartRate{
@@ -187,43 +201,52 @@ h2{
 .cartTime{
     bottom: 80px;
     left: 5px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     background-color: rgba(255, 255, 255, 0.688);
     color: black;
+    color: white;
+    background-color: black;
 }
 
 
 .cartDetail{
     opacity: 0;
-    overflow-y: auto;
     position: absolute;
     top: 5px;
     bottom: 5px;
-    right: 10px;
-    left: 10px;  
-    padding: 5px 10px;
-    visibility: hidden;
-    
+    right: 5px;
+    left: 5px;  
+    visibility: hidden;  
     transition:  2s visibility 0s, opacity 0.5s linear ;
 }
 
-.cartDetail::-webkit-scrollbar{
+.cartDetailTxt{
+    overflow-y: auto;
+    position: absolute;
+    padding: 5px 10px;
+    top: 5px;
+    bottom: 50px;
+    right: 10px;
+    left: 10px;
+}
+
+.cartDetailTxt::-webkit-scrollbar{
     border-radius: 10px;
 }
 
-.cartDetail::-webkit-scrollbar-track{
+.cartDetailTxt::-webkit-scrollbar-track{
     box-shadow: inset 0 0 5px gray;
     border-radius: 20px;
 }
 
-.cartDetail::-webkit-scrollbar-thumb{
-    background-color: #02b4f0;
+.cartDetailTxt::-webkit-scrollbar-thumb{
+    background-color: #02b4f02f;
     border-radius: 20px;
 
 }
 
 
-.cartDetail p{
+.cartDetailTxt p{
     font-size: 0.8rem ;
     line-height: 1.5rem;
 }
@@ -301,6 +324,11 @@ h2{
 
 
 .cartLink{
+    position: absolute;
     text-align: center;
     margin-top: 0px;
+    bottom: 2px;
+    right: 5px;
+    left: 5px;
+    width: 100%;
 }

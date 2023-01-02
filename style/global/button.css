@@ -42,7 +42,8 @@
 
 
 .LinkButt{
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    font-weight: 500;
     background-color:blue;
     color: rgb(255, 255, 255);
     padding: 10px;

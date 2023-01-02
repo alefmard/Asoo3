@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZJJGZFSR9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HZJJGZFSR9');
+</script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +18,11 @@
 
     <link rel="stylesheet" href="style/courseTemp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <meta name="title" content="مقایسه و انتخاب دوره‌های آموزشی Html">
+    <meta name="description" content="با آسو بهترین دوره‌های آموزشی Html از برترین پلتفرم‌های ایرانی و خارجی رو مقایسه کن">
+    <meta name="keywords" content="آموزش Html,دوره Html,آموزش برنامه‌نویسی,آموزش برنامه‌نویسی Html,یوتیوب,Coursera,Html,مکتب‌حونه,سبزلرن,فرادرس">
+    <meta name="auther" content="آسو">
+    <link rel="icon" type="image/x-icon" href="Media/Picturs/Asogo.png">
 </head>
 <body>
     <main>
@@ -22,7 +36,7 @@
 
                     <div class="navigationList">
                         <ul>
-                            <li><a href="index.html">خانه</a></li>
+                            <li><a href="index.html">آسو</a></li>
                             <li><a href="CSSCourses.html">CSS</a></li>
                             <li><a href="JavaSceriptCourses.html">JavaScript</a></li>
                         </ul> 
@@ -35,11 +49,10 @@
                 <div class="coursesMainContainer">
 
                     <div class="coursesDetailC">
-                        <h1 class="iTopic">دوره Html</h1>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.</p>
+                        <h1 class="iTopic">‌  دوره‌های آموزشی Html</h1>
                     </div>
 
-                    <h2> آموزش‌ها</h2>
+                    
 
 
                     <div class="coursesContainer">
@@ -49,23 +62,39 @@
                            <div class="coursesFilter1">
                                 <h4 class="iTopic">ارائه‌دهنده</h4>
                                 
-                                <input type="checkbox" name="MaktabKhone" id="Maktab" checked onchange="Maktab()">
-                                <span for="MaktabKhone"> مکتب‌‌خونه </span> 
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="MaktabKhone" id="Maktab" checked onchange="Maktab()">
+                                            <span for="MaktabKhone"> مکتب‌‌خونه </span>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="FaraDars" id="FaraDars" checked onchange="FaraDars()">
+                                            <span For="FaraDars"> فرادرس </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="Roocket" id="Roocket" checked onchange="Roocket()">
+                                             <span for="Roocket"> راکت </span>  
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="SabzLearn" id="SabzLearn" checked onchange="SabzLearn()">
+                                            <span for="SabzLearn"> سبزلرن </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <input type="checkbox" name="Coursera" id="Coursera" checked onchange="Coursera()">
+                                            <span for="Coursera"> کورسرا </span>
+                                        </td>
+                                        <td>
+                                            <input type="checkbox" name="YouTube" id="YouTube" checked onchange="YouTube()">
+                                            <span for="YouTube"> یوتیوب </span>
+                                        </td>
+                                    </tr>
 
-                                <input type="checkbox" name="FaraDars" id="FaraDars" checked onchange="FaraDars()">
-                                <span For="FaraDars"> فرادرس </span>
-                                
-                                <input type="checkbox" name="Roocket" id="Roocket" checked onchange="Roocket()">
-                                <span for="Roocket"> راکت </span>
-
-                                <input type="checkbox" name="SabzLearn" id="SabzLearn" checked onchange="SabzLearn()">
-                                <span for="SabzLearn"> سبزلرن </span>
-
-                                <input type="checkbox" name="Coursera" id="Coursera" checked onchange="Coursera()">
-                                <span for="Coursera"> کورسرا </span>
-
-                                <input type="checkbox" name="YouTube" id="YouTube" checked onchange="YouTube()">
-                                <span for="YouTube"> یوتیوب </span>
+                                 </table>
 
                            </div>
                            <br/>
@@ -109,8 +138,8 @@
                             <div class="courseCart Maktab">
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-maktab-1.webp" alt="HTML 4 logo">
-                                    <div class="cartPublisher">مکتب‌‌خونه</div>
-                                    <div class="cartTopic">برنامه‌نویسی وب</div>
+                                    <div class="cartPublisher"><h4>مکتب‌‌خونه</h4></div>
+                                    <div class="cartTopic"><h3>برنامه‌نویسی وب</h3></div>
                                     <div class="cartRate">
 
                                         <span class="fa fa-star checked "></span>
@@ -124,8 +153,11 @@
                                     <div class="cartTime"> ۲۴:۰۰:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>یکی از مجبوب‌ترین آموزش‌های طراحی وب مکتب‌‌خونه، توسط استاد مرحوم محمد صالحه تدریس شده است. این آموزش کاملا رایگان می‌باشد و علاوه بر مبحث HTML به مباحث دیگری همچون CSS, JavaScript, PHP و SQL نیز می‌پردازد که مباحث فرانت و بک-اند را به صورت مقدماتی پوشش می‌دهد و می‌تواند شروع مناسبی در این حوزه باشد.</p>
-                                    
+
+                                    <div class="cartDetailTxt">
+                                        <p>یکی از مجبوب‌ترین آموزش‌های طراحی وب مکتب‌‌خونه، توسط استاد مرحوم محمد صالحه تدریس شده است. این آموزش کاملا رایگان می‌باشد و علاوه بر مبحث HTML به مباحث دیگری همچون CSS, JavaScript, PHP و SQL نیز می‌پردازد که مباحث فرانت و بک-اند را به صورت مقدماتی پوشش می‌دهد و می‌تواند شروع مناسبی در این حوزه باشد.</p>
+                                    </div>
+                                                  
                                     <div class="cartLink">
                                         <a href="https://maktabkhooneh.org/course/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%D9%88%D8%A8-mk74/#information" target="_blank"><button class="LinkButt">بزن بریم </button></a>
                                     </div>
@@ -136,8 +168,8 @@
                             <div class="courseCart Roocket">
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-roocket.webp" alt="HTML 4 logo">
-                                    <div class="cartPublisher">راکت</div>
-                                    <div class="cartTopic">آموزش HTML</div>
+                                    <div class="cartPublisher"><h4>راکت</h4></div>
+                                    <div class="cartTopic"><h3>آموزش HTML</h3></div>
                                     <div class="cartRate">
                                         <span class="fa fa-star-half-empty checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -150,7 +182,10 @@
                                     <div class="cartTime"> ۳:۰۰:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>در دوره آموزش HTML شما به شکل کامل و رایگان با HTML آشنا خواهید شد و یاد می‌گیرید که چطور از HTML برای ایجاد صفحات وب خود استفاده کنید. این دوره رایگان است و گواهینامه اتمام دوره نیز دارد. </p>
+                                    <div class="cartDetailTxt">
+                                        <p>در دوره آموزش HTML شما به شکل کامل و رایگان با HTML آشنا خواهید شد و یاد می‌گیرید که چطور از HTML برای ایجاد صفحات وب خود استفاده کنید. این دوره رایگان است و گواهینامه اتمام دوره نیز دارد. </p>
+                                    </div>
+                                    
                                     <div class="cartLink">
                                         <a href="https://roocket.ir/series/learn-html" target="_blank"><button class="LinkButt">بزن بریم </button></a>
                                     </div>
@@ -162,8 +197,8 @@
 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-maktab-2.webp" alt="HTML 4 logo">
-                                    <div class="cartPublisher">مکتب‌‌خونه</div>
-                                    <div class="cartTopic"> آموزش طراحی وب (Front-End)</div>
+                                    <div class="cartPublisher"><h4>مکتب‌‌خونه</h4></div>
+                                    <div class="cartTopic"><h3>آموزش طراحی وب (Front-End)</h3></div>
                                     <div class="cartRate">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -176,7 +211,10 @@
                                     <div class="cartTime"> ۱۵:۰۰:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>این دوره به شما این امکان را می‌دهد که با استفاده از کدنویسی، فضای سایت را طراحی کرده و آنچه را موردنظر UI Designer است را روی آن پیاده کنید. در واقع در این دوره یاد می‌گیرید با ابزار‌هایی مانند html و css چگونه بخش فرانت اند یک وب سایت را طراحی کنید. در این دوره مباحث زیادی با موضوع طراحی بخش Front یک وب‌سایت مطرح شده است. این دوره گواهینامه اتمام نیز دارد. </p>
+                                    <div class="cartDetailTxt">
+                                        <p>این دوره به شما این امکان را می‌دهد که با استفاده از کدنویسی، فضای سایت را طراحی کرده و آنچه را موردنظر UI Designer است را روی آن پیاده کنید. در واقع در این دوره یاد می‌گیرید با ابزار‌هایی مانند html و css چگونه بخش فرانت اند یک وب سایت را طراحی کنید. در این دوره مباحث زیادی با موضوع طراحی بخش Front یک وب‌سایت مطرح شده است. این دوره گواهینامه اتمام نیز دارد. </p>
+
+                                    </div>
                                     
                                     <div class="cartLink">
                                         <a href="https://maktabkhooneh.org/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C-%D9%88%D8%A8%D8%B3%D8%A7%DB%8C%D8%AA-front-end-mk1658/#information" target="_blank"><button class="LinkButt">بزن بریم </button></a>
@@ -190,8 +228,8 @@
                                 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-sabz-1.jfif" alt="HTML 4 logo">
-                                    <div class="cartPublisher">سبزلرن</div>
-                                    <div class="cartTopic"> HTML مقدماتی تا پیشرفته</div>
+                                    <div class="cartPublisher"><h4>سبزلرن</h4></div>
+                                    <div class="cartTopic"><h3>HTML مقدماتی تا پیشرفته</h3> </div>
                                     <div class="cartRate">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -204,7 +242,12 @@
                                     <div class="cartTime"> ۱۰:۴۵:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>شما در این دوره HTML را از ۰ تا ۱۰۰ به صورت پروژه‌محور یاد خواهید گرفت. این دوره پروژه‌محور می‌باشد اما این دوره فاقد مدرک و گواهی اتمام می‌باشد. باتوجه به مدت زمان بالایی که دارد محتوای زیادی را به فراگیر انتقال می‌دهد.</p>
+                                    
+                                    <div class="cartDetailTxt">
+
+                                        <p>شما در این دوره HTML را از ۰ تا ۱۰۰ به صورت پروژه‌محور یاد خواهید گرفت. این دوره پروژه‌محور می‌باشد اما این دوره فاقد مدرک و گواهی اتمام می‌باشد. باتوجه به مدت زمان بالایی که دارد محتوای زیادی را به فراگیر انتقال می‌دهد.</p>
+
+                                    </div>
                                     
                                     <div class="cartLink">
                                         <a href="https://sabzlearn.ir/product/html-advance/" target="_blank"><button class="LinkButt">بزن بریم </button></a>
@@ -218,8 +261,8 @@
                                 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/faradrs-1.png" alt="HTML 4 logo">
-                                    <div class="cartPublisher">فرادرس</div>
-                                    <div class="cartTopic">آموزش HTML مقدماتی</div>
+                                    <div class="cartPublisher"><h4>فرادرس</h4></div>
+                                    <div class="cartTopic"><h3>آموزش HTML مقدماتی</h3></div>
                                     <div class="cartRate">
                                         <span class="fa fa-star-half-empty checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -232,7 +275,11 @@
                                     <div class="cartTime"> ۲:۵۶:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>این دوره از فرادرس بر اساس HTML4 تهیه شده است که در حال حاضر نسخه HTML5 استفاده می‌شود اما سرفصل‌های دوره خیلی جامع و مناسب انتخاب شده است به‌گونه ای که فهم کامل را با مبلغی ناچیز دریافت خواهید کرد. از معایب این دوره و پلتفرم عدم ارائه گواهینامه می‌باشد.</p>
+                                    <div class="cartDetailTxt">
+
+                                        <p>این دوره از فرادرس بر اساس HTML4 تهیه شده است که در حال حاضر نسخه HTML5 استفاده می‌شود اما سرفصل‌های دوره خیلی جامع و مناسب انتخاب شده است به‌گونه ای که فهم کامل را با مبلغی ناچیز دریافت خواهید کرد. از معایب این دوره و پلتفرم عدم ارائه گواهینامه می‌باشد.</p>
+
+                                    </div>
                                     
                                     <div class="cartLink">
                                         <a href="https://faradars.org/courses/fvh4c94062-basic-of-web-design-using-html" target="_blank"><button class="LinkButt">بزن بریم </button></a>
@@ -247,8 +294,8 @@
                                 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-rafadars-2.png" alt="HTML 4 logo">
-                                    <div class="cartPublisher">فرادرس</div>
-                                    <div class="cartTopic"> آموزش HTML تکمیلی</div>
+                                    <div class="cartPublisher"><h4>فرادرس</h4></div>
+                                    <div class="cartTopic"><h3>آموزش HTML تکمیلی</h3> </div>
                                     <div class="cartRate">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -261,7 +308,11 @@
                                     <div class="cartTime"> ۳:۲۳:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>این دوره، دوره تکمیلی آموزش HTML مقدماتی می‌باشد که توسط همین پلتفرم ارائه می‌شود. این دوره نیز همانند دوره مقدماتی فرادرس گواهینامه ندارد.</p>
+                                    <div class="cartDetailTxt">
+
+                                        <p>این دوره، دوره تکمیلی آموزش HTML مقدماتی می‌باشد که توسط همین پلتفرم ارائه می‌شود. این دوره نیز همانند دوره مقدماتی فرادرس گواهینامه ندارد.</p>
+
+                                    </div>
                                     
                                     <div class="cartLink">
                                         <a href="https://faradars.org/courses/fvh4c96022-advanced-web-design-using-html" target="_blank"><button class="LinkButt">بزن بریم </button></a>
@@ -274,8 +325,8 @@
                                 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-coursera-2.jfif" alt="HTML 4 logo">
-                                    <div class="cartPublisher">Coursera</div>
-                                    <div class="cartTopic"> HTML,CSS & JS</div>
+                                    <div class="cartPublisher"><h4>Coursera</h4></div>
+                                    <div class="cartTopic"><h3>HTML,CSS & JS</h3> </div>
                                     <div class="cartRate">
                                         <span class="fa fa-star-half-empty checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -288,8 +339,12 @@
                                     <div class="cartTime"> ۴۰:۰۰:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>
-                                        In this course, We will start by learning how to implement modern web pages with HTML and CSS. We will then advance to learning how to code our pages such that its components rearrange and resize themselves automatically based on the size of the user’s screen. You’ll be able to code up a web page that will be just as useful on a mobile phone as on a desktop computer. Last but certainly not least, we will get a thorough introduction to Javascript. Using Javascript, you will be able to build a fully functional web application that utilizes Ajax to expose server-side functionality and data to the end user.</p>
+                                    <div class="cartDetailTxt">
+
+                                        <p>
+                                            In this course, We will start by learning how to implement modern web pages with HTML and CSS. We will then advance to learning how to code our pages such that its components rearrange and resize themselves automatically based on the size of the user’s screen. You’ll be able to code up a web page that will be just as useful on a mobile phone as on a desktop computer. Last but certainly not least, we will get a thorough introduction to Javascript. Using Javascript, you will be able to build a fully functional web application that utilizes Ajax to expose server-side functionality and data to the end user.</p>
+
+                                    </div>
 
                                         <div class="cartLink">
                                             <a href="https://www.coursera.org/learn/html-css-javascript-for-web-developers#about" target="_blank"><button class="LinkButt">بزن بریم </button></a>
@@ -302,8 +357,8 @@
                                 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-coursera-1.jfif" alt="HTML 4 logo">
-                                    <div class="cartPublisher">Coursera</div>
-                                    <div class="cartTopic"> HTML,CSS & JS</div>
+                                    <div class="cartPublisher"><h4>Coursera</h4></div>
+                                    <div class="cartTopic"><h3> HTML,CSS & JS</h3></div>
                                     <div class="cartRate">
                                         <span class="fa fa-star checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -316,8 +371,12 @@
                                     <div class="cartTime"> ۷۲:۰۰:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>
-                                        This Specialization covers how to write syntactically correct HTML5 and CSS3, and how to create interactive web experiences with JavaScript. Mastering this range of technologies will allow you to develop high quality web sites that, work seamlessly on mobile, tablet, and large screen browsers accessible. During the capstone you will develop a professional-quality web portfolio demonstrating your growth as a web developer and your knowledge of accessible web design. This will include your ability to design and implement a responsive site that utilizes tools to create a site that is accessible to a wide audience, including those with visual, audial, physical, and cognitive impairments.</p>
+                                    <div class="cartDetailTxt">
+
+                                        <p>
+                                            This Specialization covers how to write syntactically correct HTML5 and CSS3, and how to create interactive web experiences with JavaScript. Mastering this range of technologies will allow you to develop high quality web sites that, work seamlessly on mobile, tablet, and large screen browsers accessible. During the capstone you will develop a professional-quality web portfolio demonstrating your growth as a web developer and your knowledge of accessible web design. This will include your ability to design and implement a responsive site that utilizes tools to create a site that is accessible to a wide audience, including those with visual, audial, physical, and cognitive impairments.</p>
+
+                                    </div>
                                     
                                         <div class="cartLink">
                                             <a href="https://www.coursera.org/specializations/web-design#courses" target="_blank"><button class="LinkButt">بزن بریم </button></a>
@@ -329,8 +388,8 @@
                                 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-coursera-3.jfif" alt="HTML 4 logo">
-                                    <div class="cartPublisher">Coursera</div>
-                                    <div class="cartTopic"> HTML & CSS in depth</div>
+                                    <div class="cartPublisher"><h4>Coursera</h4></div>
+                                    <div class="cartTopic"><h3> HTML & CSS in depth</h3></div>
                                     <div class="cartRate">
                                         <span class="fa fa-star-half-empty checked"></span>
                                         <span class="fa fa-star checked"></span>
@@ -343,8 +402,12 @@
                                     <div class="cartTime"> ۲۹:۰۰:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>
-                                        In this course, you’ll use software development tools like HTML to build attractive web pages that work well—and you’ll use structured semantic data to control how websites appear to the end user. You will then dive deeper into CSS by applying increasingly specific styling to various elements. You’ll learn to use Bootstrap’s grid system to create layouts and work with components and themes. Finally, you’ll explore debugging and learn how it can be utilized to banish common front-end errors.</p>
+                                    <div class="cartDetailTxt">
+
+                                        <p>
+                                            In this course, you’ll use software development tools like HTML to build attractive web pages that work well—and you’ll use structured semantic data to control how websites appear to the end user. You will then dive deeper into CSS by applying increasingly specific styling to various elements. You’ll learn to use Bootstrap’s grid system to create layouts and work with components and themes. Finally, you’ll explore debugging and learn how it can be utilized to banish common front-end errors.</p>
+
+                                    </div>
                                     
                                         <div class="cartLink">
                                             <a href="https://www.coursera.org/learn/html-and-css-in-depth#instructors" target="_blank"><button class="LinkButt">بزن بریم </button></a>
@@ -357,8 +420,8 @@
                                 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-youtube.webp" alt="HTML 4 logo">
-                                    <div class="cartPublisher">Youtube</div>
-                                    <div class="cartTopic"> HTML Tutorial for Beginners</div>
+                                    <div class="cartPublisher"><h4>Youtube</h4></div>
+                                    <div class="cartTopic"><h3>HTML Tutorial for Beginners</h3></div>
                                     <div class="cartRate">
                                         
                                     </div>
@@ -366,8 +429,12 @@
                                     <div class="cartTime"> ۱:۰۹:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>
-                                        Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.</p>
+                                    <div class="cartDetailTxt">
+
+                                        <p>
+                                            Learn HTML for a career in web development. This HTML tutorial teaches you everything you need to get started.</p>
+
+                                    </div>
                                     
                                         <div class="cartLink">
                                             <a href="https://www.youtube.com/watch?app=desktop&v=qz0aGYrrlhU" target="_blank"><button class="LinkButt">بزن بریم </button></a>
@@ -380,8 +447,8 @@
                                 
                                 <div class="cartImg">
                                     <img src="Media/Picturs/HTML/html-youtube.webp" alt="HTML 4 logo">
-                                    <div class="cartPublisher">Youtube</div>
-                                    <div class="cartTopic"> HTML Full Course</div>
+                                    <div class="cartPublisher"><h4>Youtube</h4></div>
+                                    <div class="cartTopic"> <h3>HTML Full Course</h3></div>
                                     <div class="cartRate">
                                         
                                         
@@ -390,9 +457,13 @@
                                     <div class="cartTime"> ۲:۰۲:۰۰</div>
                                 </div>
                                 <div class="cartDetail">
-                                    <p>
-                                        Learn the basics of HTML5 and web development in this awesome course for beginners.
-                                    </p>
+                                    <div class="cartDetailTxt">
+
+                                        <p>
+                                            Learn the basics of HTML5 and web development in this awesome course for beginners.
+                                        </p>
+
+                                    </div>
                                     <div class="cartLink">
                                         <a href="https://www.youtube.com/watch?app=desktop&v=pQN-pnXPaVg" target="_blank"><button class="LinkButt">بزن بریم </button></a>
                                     </div>

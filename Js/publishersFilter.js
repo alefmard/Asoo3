@@ -5,6 +5,13 @@ let RoocketFlag = true
 let SabzLearnFlag = true
 let CourseraFlag = true
 let YouTubeFlag = true
+let Ranger = document.querySelector("#slider");
+let RangerTime = document.querySelector('#sliderTime');
+let filterSubmitButt= document.querySelector('#filterSubmitButt');
+Ranger.addEventListener('touchmove',RangeChange);
+RangerTime.addEventListener('touchmove',TimeChange);
+filterSubmitButt.addEventListener('touchstart',filterSubmit);
+
 
 function Maktab(){
     if(MaktabFlag){
